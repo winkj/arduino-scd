@@ -28,11 +28,11 @@ void loop() {
         Serial.print("ppm | ");
 
         Serial.print("Temp: ");
-        Serial.print(scd.getTemp());
+        Serial.print(scd.getTemperature());
         Serial.print("C | ");
 
         Serial.print("RH: ");
-        Serial.print(scd.getRH());
+        Serial.print(scd.getHumidity());
         Serial.print("%\n");
     } else {
         Serial.print("Error in readSample(), ret = ");

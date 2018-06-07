@@ -71,12 +71,12 @@ public:
    * Returns the last temperature value read - does NOT trigger a new measurement
    * @return last temperature value read
    */
-  float getTemp() const;
+  float getTemperature() const;
   /**
    * Returns the last relative humidty value read - does NOT trigger a new measurement
    * @return last humidity value read
    */
-  float getRH() const;
+  float getHumidity() const;
 
 private:
   static float convertToFloat(uint8_t* data);

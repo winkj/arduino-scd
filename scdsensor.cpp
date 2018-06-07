@@ -161,12 +161,12 @@ float ScdSensor::getCO2() const
     return mCO2;
 }
 
-float ScdSensor::getTemp() const
+float ScdSensor::getTemperature() const
 {
     return mTemp;
 }
 
-float ScdSensor::getRH() const
+float ScdSensor::getHumidity() const
 {
     return mRH;
 }
