@@ -1,0 +1,29 @@
+#######################################
+# Syntax Coloring Map For arduino-scd
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+ScdSensor	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+init	KEYWORD2
+readSample	KEYWORD2
+getCO2		KEYWORD2
+getHumidity	KEYWORD2
+getTemperature	KEYWORD2
+stopMeasurement	KEYWORD2
+checkDataReady	KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
