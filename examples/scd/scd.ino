@@ -5,7 +5,6 @@
 ScdSensor scd;
 
 void setup() {
-  Wire.begin();
   Serial.begin(9600);
   delay(1000); // let serial console settle
 

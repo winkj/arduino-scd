@@ -68,6 +68,7 @@ float ScdSensor::convertToFloat(uint8_t* data)
 
 int ScdSensor::init()
 {
+  Wire.begin();
   int ret = I2CHelper::i2c_write(I2C_ADDR, CMD_SET_INTERVAL, CMD_SET_INTERVAL_LEN, true);
   if (ret != 0) {
     return 1;
