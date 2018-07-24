@@ -129,11 +129,11 @@ int ScdSensor::readSample()
   uint8_t dataBuf[CMD_READ_MEASUREMENT_RESULT_LEN] = { 0 };
   ret = I2CHelper::i2c_read(I2C_ADDR, dataBuf, dataBufLen);
   if (ret != 0) {
-    return 1;
+    return 2;
   }
 
   if (!validateCRC(dataBuf, 6, 3)) {
-    return 2;
+    return 3;
   }
 
   mCO2  = convertToFloat(dataBuf);
