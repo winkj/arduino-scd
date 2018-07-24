@@ -71,6 +71,9 @@ int ScdSensor::init()
   Wire.begin();
   Wire.setClock(100000);
 
+#ifdef ESP8266
+  Wire.setClockStretchLimit(1000);
+#endif /* ESP8266 */
 
   int ret = I2CHelper::i2c_write(I2C_ADDR, CMD_SET_INTERVAL, CMD_SET_INTERVAL_LEN, true);
   if (ret != 0) {
