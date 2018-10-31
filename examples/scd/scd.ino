@@ -1,5 +1,3 @@
-#include <Wire.h>
-
 #include <scdsensor.h>
 
 ScdSensor scd;
