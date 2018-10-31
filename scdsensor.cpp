@@ -26,6 +26,7 @@
 */
 
 #include <Arduino.h>
+#include <Wire.h>
 
 #include "scdsensor.h"
 #include "i2chelper.h"
